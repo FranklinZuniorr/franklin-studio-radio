@@ -59,6 +59,7 @@ export const ListLinks = ({ navigation }: ListLinksProps) => {
                                 <Option
                                 key={data.id}
                                 link={data.link}
+                                date={data.date}
                                 id={data.id}
                                 onRemove={remove}
                                 />

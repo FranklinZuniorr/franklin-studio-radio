@@ -7,6 +7,7 @@ import Toast from 'react-native-toast-message';
 interface Link {
     link: string;
     id: string;
+    date: Date;
 }
 
 interface UseHandleListLinksStorageReturn {
@@ -56,7 +57,7 @@ export const useHandleListLinksStorage = (): UseHandleListLinksStorageReturn => 
             return;
         }
 
-        savedLinks.push({link, id: uuid.v4()});
+        savedLinks.push({link, id: uuid.v4(), date: new Date()});
         await AsyncStorage.setItem(KEY_LIST_LINKS_STORAGE, JSON.stringify(savedLinks));
         handleDefineLinks();
     };

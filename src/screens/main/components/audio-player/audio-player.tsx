@@ -72,6 +72,11 @@ export const AudioPlayer = ({ url }: AudioPlayerProps) => {
     await TrackPlayer.pause();
   };
 
+  const handlePlayerWithUrlChange = async () => {
+    if (url.length === 0) {return;}
+    await TrackPlayer.pause();
+  };
+
   const handleGoToListLinksScreen = () => {
     navigate(ENUM_SCREENS_NAMES.LIST_LINKS);
   };
@@ -93,6 +98,11 @@ export const AudioPlayer = ({ url }: AudioPlayerProps) => {
     handlePlayerWithError();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasError]);
+
+  useEffect(() => {
+    handlePlayerWithUrlChange();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [url]);
 
   return  <View style={audioPlayerStyles.container}>
               {

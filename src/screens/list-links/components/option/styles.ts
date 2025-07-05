@@ -11,6 +11,9 @@ export const optionStyles = StyleSheet.create({
         padding: 10,
         gap: 5,
     },
+    areaText: {
+        gap: 5,
+    },
     text: {
         fontSize: 15,
         color: 'black',
@@ -18,7 +21,19 @@ export const optionStyles = StyleSheet.create({
         textTransform: 'uppercase',
         textDecorationLine: 'underline',
     },
-    btnDelete: {
+    actionsArea: {
+        flexDirection: 'row',
+        gap: 10,
+    },
+    subText: {
+        fontSize: 8,
+        color: 'black',
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        maxWidth: 200,
+        opacity: 0.5,
+    },
+    btn: {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white',
