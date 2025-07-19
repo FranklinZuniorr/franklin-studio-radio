@@ -1,4 +1,24 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📻 Franklin Studio Radio
+
+A **React Native CLI** app that plays online radio via external AAC/MP3 stream URLs. You can save, list, and play your favorite stations directly in the app.
+
+---
+
+## 🚀 Features
+
+- Play radio from external stream URLs  
+- Save links for later  
+- List and delete saved stations  
+- Copy and play outside the app
+
+---
+
+## 🛠️ Tech Stack
+
+- React Native CLI  
+- TypeScript  
+- AsyncStorage  
+- react-native-track-player
 
 # Getting Started
 
